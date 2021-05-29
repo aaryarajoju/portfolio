@@ -47,6 +47,10 @@
       color:rgb(212, 212, 212);
     }
 
+    .dark-mode #techstack{
+      color:rgb(108, 117, 125);
+    }
+
   </style>
   <link rel="shortcut icon" type="image/png" href="sources/favicon.png">
 </head>
@@ -55,7 +59,8 @@
   <!-- Navbar (appears at top of your webpage)-->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <input onclick="make_me_dark()" type="checkbox" class="toggle" checked>
+    <!-- <input onclick="make_me_dark()" type="checkbox" class="toggle" checked> -->
+    <p id="techstack"><input onclick="make_me_dark()" type="checkbox" class="toggle" checked> <br> Dark Mode</p>
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">AARYA RAJOJU</span>
       <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="sources/my_img.jpg" alt="" /></span>
@@ -369,7 +374,8 @@
     <section class="resume-section" id="projects">
       <div class="resume-section-content">
         <h2 class="mb-4">Projects</h2>
-        <p>I've worked on a few beginner projects, mostly revolving around Discord.JS & Arduino.</p>
+        <!-- <p>I've worked on a few beginner projects, mostly revolving around Discord.JS & Arduino.</p> -->
+        <p>I've worked on a few beginner projects.</p>
         <p class="mb-0">Here are some of them:</p>
         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
           aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -377,21 +383,33 @@
           ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
           sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p> -->
         <div class="row project-cards mx-auto align-items-center">
+          <!-- <div class="col-md-4 mb-4 mx-auto">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">8-Puzzle - Auto Solve</h5>
+                <p class="card-text">An AI based program, that automatically generates random 8-puzzle boards and solves them, using the A* search algorithm</p>
+                <p id="techstack">Concepts Used:
+                  <ul id="techstack">
+                    <li>A* search algorithm - for searching the most optimal next step</li>
+                  </ul>
+                </p>
+                <a target="_blank" href="https://github.com/aaryarajoju/8-Puzzle-ai-AutoSolve-py" class="btn btn-primary">Github Repo</a>
+              </div>
+            </div>
+          </div> -->
           <div class="col-md-4 mb-4 mx-auto">
             <div class="card" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title">8-Puzzle</h5>
                 <p class="card-text">A discord bot & a console-based app to play the 8-puzzle sliding game.</p>
-                <p>Technologies Used:
-                  <ul>
+                <p id="techstack">Technologies Used:
+                  <ul id="techstack">
                     <li>Discord.JS - for making the discord bot</li>
-                    <li>GoLang - for making the console app</li>
+                    <li>Go - for making the console app</li>
                   </ul>
                 </p>
-                <!-- <a href="https://aaryarajoju.github.io/AR50bot/" class="btn btn-primary">Website</a>
-                <br><br>                 -->
-                <a href="https://github.com/aaryarajoju/8-Puzzle" class="btn btn-primary">Github Repo - Console app</a>
-                <a href="https://github.com/aaryarajoju/8-Puzzle-Bot" class="btn btn-primary">Github Repo - Discord Bot</a>
+                <a target="_blank" href="https://github.com/aaryarajoju/8-Puzzle" class="btn btn-primary">Github Repo - Console app</a>
+                <a target="_blank" href="https://github.com/aaryarajoju/8-Puzzle-Bot" class="btn btn-primary">Github Repo - Discord Bot</a>
               </div>
             </div>
           </div>
@@ -400,16 +418,14 @@
               <div class="card-body">
                 <h5 class="card-title">Arduino - Game Console</h5>
                 <p class="card-text">An Arduino-based game controller to play interactive games.</p>
-                <p>Technologies Used:
-                  <ul>
+                <p id="techstack">Technologies Used:
+                  <ul id="techstack">
                     <li>Arduino</li>
                     <li>Node-SerialPort - for serial port comm.</li>
                     <li>Node.JS - for running the game</li>
                   </ul>
                 </p>
-                <!-- <a href="https://aaryarajoju.github.io/AR50bot/" class="btn btn-primary">Website</a>
-                <br><br>                 -->
-                <a href="https://github.com/aaryarajoju/arduino-GameConsole" class="btn btn-primary">Github Repo</a>
+                <a target="_blank" href="https://github.com/aaryarajoju/arduino-GameConsole" class="btn btn-primary">Github Repo</a>
               </div>
             </div>
           </div>
@@ -418,16 +434,46 @@
               <div class="card-body">
                 <h5 class="card-title">AR50</h5>
                 <p class="card-text">A general-purpose Discord bot.<br> (Orignally made as the final project for Harvard CS50)</p>
-                <p>Technologies Used:
-                  <ul>
+                <p id="techstack">Technologies Used:
+                  <ul id="techstack">
                     <li>Discord.JS - for making the discord bot</li>
                     <li>The Weather API - for fetching the weather data</li>
                     <li>Alpha Vantage API - for fetching the stock data</li>
                   </ul>
                 </p>
                 <!-- <a href="https://aaryarajoju.github.io/AR50bot/" class="btn btn-primary">Website</a>
-                <br><br>                 -->
-                <a href="https://github.com/aaryarajoju/AR50" class="btn btn-primary">Github Repo</a>
+                <br><br>-->
+                <a target="_blank" href="https://github.com/aaryarajoju/AR50" class="btn btn-primary">Github Repo</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 mb-4 mx-auto">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Tasks ToDo - Chrome Extension</h5>
+                <p class="card-text">A chrome extension for To-Do lists</p>
+                <p id="techstack">Technologies Used:
+                  <ul id="techstack">
+                    <li></li>
+                  </ul>
+                </p>
+                <a target="_blank" href="https://github.com/aaryarajoju/TasksToDo-ChromeExtension" class="btn btn-primary">Github Repo</a>
+                <a target="_blank" href="" class="btn btn-primary">Chrome Web Store</a>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-md-4 mb-4 mx-auto">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">AR - VS Code Theme</h5>
+                <p class="card-text">Theme for VS Code</p>
+                <p id="techstack">Technologies Used:
+                  <ul id="techstack">
+                    <li>VSCE</li>
+                  </ul>
+                </p>
+                <a target="_blank" href="https://github.com/aaryarajoju/AR-VSCode-Theme" class="btn btn-primary">Github Repo</a>
+                <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=aaryarajoju.ar-vscode-theme" class="btn btn-primary">Visual Studio Marketplace</a>
               </div>
             </div>
           </div>
